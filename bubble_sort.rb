@@ -4,7 +4,7 @@ def bubble_sort(unsorted_arr)
     sorted_counter = 0
     unsorted_arr.each_with_index do |number, index|
       sorted_counter += 1
-      if number > unsorted_arr[index+1]
+      if unsorted_arr[index+1] && number > unsorted_arr[index+1]
         unsorted_arr[index], unsorted_arr[index+1] = unsorted_arr[index+1], unsorted_arr[index]
         sorted_counter = 0
       end
