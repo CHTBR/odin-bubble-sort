@@ -1,4 +1,5 @@
 def bubble_sort(unsorted_arr)
+  unsorted_arr = Array.new(unsorted_arr)
   sorted_arr = []
   while unsorted_arr.size > 0
     sorted_counter = 0
